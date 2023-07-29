@@ -6,9 +6,10 @@
 data("ChickWeight")
 kapambwe_newdf <- ChickWeight
 
-
 #See the top rows of the data
 #TASK: Write the code to see the top rows of the data
+
+head(kapambwe_newdf) 
 
 
 #Install and call the package dplyr
