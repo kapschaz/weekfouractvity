@@ -15,6 +15,8 @@ head(kapambwe_newdf)
 #Install and call the package dplyr
 #TASK: Write the code to install and call dplyr
 
+install.packages("dplyr")
+library(dplyr)
 
 
 #Let's just see the weight and Time columns
