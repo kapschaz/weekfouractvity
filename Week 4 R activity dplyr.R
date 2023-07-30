@@ -40,12 +40,14 @@ notimekapambwedataframe <- select(kapambwe_newdf, weight, -Time)
 #Let's rename a column name
 #TASK: Write the code that renames 'weight' to 'ounces'
 
+#newcolname <- rename(kapambwedataframe, ounces = weight)
+kapambwedataframe <- rename(kapambwedataframe, ounces = weight)
 
 #Let's make a new dataframe with the new column name
 #TASK: Write the code that names a new dataframe that includes the 'ounces' column
 
-newcolname <- rename(kapambwedataframe, ounces = weight)
-
+ouncescolumname <- kapambwedataframe %>% 
+  select(ounces) 
 
 #Let's 'filter' our dataframe to only those with a 1 in the Chick column
 #TASK: Write the code that includes only rows where Chick = 1
