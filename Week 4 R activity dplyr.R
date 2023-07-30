@@ -29,6 +29,7 @@ seedata <- select(kapambwe_newdf, weight, Time)
 #TASK: Write the code to save the two columns as a new dataframe
 #and give it a new name
 
+kapambwedataframe <- select(kapambwe_newdf, weight, Time)
 
 #Let's get rid of the Time column in the new dataframe created above
 #TASK: Write the code that deselects the Time column
