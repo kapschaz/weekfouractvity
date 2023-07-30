@@ -35,6 +35,7 @@ kapambwedataframe <- select(kapambwe_newdf, weight, Time)
 #TASK: Write the code that deselects the Time column
 #(hint: use the 'select' function to not select a -column)
 
+notimekapambwedataframe <- select(kapambwe_newdf, weight, -Time)
 
 #Let's rename a column name
 #TASK: Write the code that renames 'weight' to 'ounces'
@@ -42,6 +43,8 @@ kapambwedataframe <- select(kapambwe_newdf, weight, Time)
 
 #Let's make a new dataframe with the new column name
 #TASK: Write the code that names a new dataframe that includes the 'ounces' column
+
+newcolname <- rename(kapambwedataframe, ounces = weight)
 
 
 #Let's 'filter' our dataframe to only those with a 1 in the Chick column
