@@ -40,7 +40,7 @@ notimekapambwedataframe <- select(kapambwe_newdf, weight, -Time)
 #Let's rename a column name
 #TASK: Write the code that renames 'weight' to 'ounces'
 
-#newcolname <- rename(kapambwedataframe, ounces = weight)
+
 kapambwedataframe <- rename(kapambwedataframe, ounces = weight)
 
 #Let's make a new dataframe with the new column name
@@ -52,11 +52,16 @@ ouncescolumname <- kapambwedataframe %>%
 #Let's 'filter' our dataframe to only those with a 1 in the Chick column
 #TASK: Write the code that includes only rows where Chick = 1
 
+filterdf <- filter(kapambwe_newdf, Chick == 1)
 
 #Let's 'group' our data by Diet
 #TASK: Write the code to group the data by Diet (hint: group_by)
 
+groupdf <- group_by(kapambwe_newdf, Diet)
 
 #Task: add one of the other codes (not in the tasks above) 
+slicedf <- slice(kapambwe_newdf, 1:5)
+relocatedf <- relocate(kapambwe_newdf, Weight)
+
 #you learned about from the dplyr package
 
