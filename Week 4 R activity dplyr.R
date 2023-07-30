@@ -23,6 +23,7 @@ library(dplyr)
 #Task: Write the code to 'select' just the weight and Time columns 
 #(hint: use the 'select' function)
 
+seedata <- select(kapambwe_newdf, weight, Time)
 
 #Let's name the dataset with just the two columns, weight and Time
 #TASK: Write the code to save the two columns as a new dataframe
