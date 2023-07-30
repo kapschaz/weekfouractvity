@@ -60,8 +60,9 @@ filterdf <- filter(kapambwe_newdf, Chick == 1)
 groupdf <- group_by(kapambwe_newdf, Diet)
 
 #Task: add one of the other codes (not in the tasks above) 
-slicedf <- slice(kapambwe_newdf, 1:5)
-relocatedf <- relocate(kapambwe_newdf, Weight)
+slicedf <- slice(kapambwe_newdf, 1:5) # This works more like the head()function it displays roles in a data frame
+
+relocatedf <- relocate(kapambwe_newdf, weight)
 
 #you learned about from the dplyr package
 
